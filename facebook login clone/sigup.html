@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <header class="signup-header">
+            <img src="images/fb-logo.png" alt="Facebook" class="logo">
+            <button class="login-btn" onclick="location.href='index.html'">Already have an account?</button>
+        </header>
+        
+        <div class="signup-content">
+            <h1>Create a New Account</h1>
+            <p>It's quick and easy.</p>
+            
+            <form class="signup-form">
+                <div class="name-inputs">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+                <input type="text" placeholder="Mobile number or email" required>
+                <input type="password" placeholder="New password" required>
+                
+                <div class="birthday">
+                    <label>Birthday</label>
+                    <input type="date" required>
+                </div>
+                
+                <div class="gender">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="custom" required> Custom</label>
+                    </div>
+                </div>
+                
+                <p class="terms">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>.</p>
+                <button type="submit" class="btn-signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
